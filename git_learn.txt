@@ -1,9 +1,19 @@
 集中式代码管理 vs 分布式
 git init 
-git init dir_name
-四个区域： 工作区 暂存区 本地仓库 远程仓库
+git init dir_name   
+四个区域： 工作区 暂存(stage/index)区  本地仓库         远程仓库
+           工厂    货车          本地储货仓库      总仓库
 四个状态：  未跟踪 未修改 已修改 已暂存    
-
+git status
+git add 目录或文件， 可以通配符
+git commit -m "xxx"  
+git log [--oneline]
+git reset: 
+        工作区    暂存区   
+--soft  y       y
+--hard  n       n
+--mixed y       n  (default)
+git ls-files 查看在暂存区中已经index（追踪）了的文件
 
 
 
